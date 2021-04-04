@@ -1,0 +1,426 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+blockquote,
+q {
+    quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Bungee',
+    cursive;
+    color: #1c8f7c;
+
+    
+}
+html {
+    font-size: 16px;
+}
+/* END RESET */
+
+/* navbar Container */
+.main-nav {
+    display: flex;
+    background-color: #1c8f7c;
+    width: 100%;
+    
+}
+/* ul Container*/
+.main-nav 
+.main-nav-list {
+    display: flex;
+    margin-right: auto;
+    list-style-type: none;
+}
+
+/* Responsive images */
+.main-nav 
+.main-nav-list img {
+    display: flex;
+    height: auto;
+    width: auto;
+    max-height: 50px;
+    max-width: 75px;
+    margin: 15px;
+    cursor: pointer;
+}
+
+/* Respons Imgs Hover Effects */
+.main-nav img:hover {
+    opacity: 50%;
+    cursor: pointer;
+}
+
+@keyframes float {
+    0% {
+        transform: translatey(0px);
+    }
+
+    50% {
+        
+        transform: translatey(-20px);
+    }
+
+    100% {
+        translatey(0px);
+    }
+}
+
+/* Logo */
+.main-nav
+.logo {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    position: absolute;
+    top: 15px;
+    transform: translatey(0px);
+    animation: float 6s ease-in-out infinite;
+}
+
+/* Header */
+.header-wrapper {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    top: 80px;
+    font-size: 400%;
+    text-transform: uppercase;
+    text-align: center;
+    width: 100%;
+}
+
+/* Header Text  */
+.header-wrapper
+.header
+.header-span-sub {
+    display: block;
+}
+
+/* Header Video Container */
+.header-video {
+    position: absolute;
+    z-index: -1;
+    top: 5em;
+    right: 0;
+    z-index: -150;
+    filter: invert(0.3);
+}
+
+.main-page-top
+#background
+.header-video-container-bottom {
+    display: flex;
+    width: 100%;
+    height: 50vh;
+    position: relative;
+    top: -50vh;
+    background-image: url("img/background.png");
+    -webkit-animation-name: STAR-MOVE;
+    -webkit-animation-duration: 500s;
+    -webkit-animation-timing-function: linear;
+    -webkit-animation-iteration-count: infinite;
+    clip-path: polygon(0% 65%, 1% 64.95%, 2% 64.8%, 3% 64.6%, 4% 64.3%, 5% 63.9%, 6% 63.45%, 7% 62.9%, 8% 62.25%, 9% 61.55%, 10% 60.8%, 11% 59.95%, 12% 59.05%, 13% 58.1%, 14% 57.1%, 15% 56.05%, 16% 55%, 17% 53.9%, 18% 52.8%, 19% 51.65%, 20% 50.5%, 21% 49.35%, 22% 48.2%, 23% 47.05%, 24% 45.9%, 25% 44.8%, 26% 43.75%, 27% 42.75%, 28% 41.75%, 29% 40.8%, 30% 39.9%, 31% 39.1%, 32% 38.35%, 33% 37.65%, 34% 37.05%, 35% 36.5%, 36% 36.05%, 37% 35.65%, 38% 35.35%, 39% 35.15%, 40% 35.05%, 41% 35%, 42% 35.05%, 43% 35.2%, 44% 35.45%, 45% 35.75%, 46% 36.15%, 47% 36.65%, 48% 37.2%, 49% 37.85%, 50% 38.55%, 51% 39.35%, 52% 40.2%, 53% 41.1%, 54% 42.05%, 55% 43.05%, 56% 44.1%, 57% 45.15%, 58% 46.3%, 59% 47.4%, 60% 48.55%, 61% 49.7%, 62% 50.85%, 63% 52%, 64% 53.15%, 65% 54.25%, 66% 55.35%, 67% 56.4%, 68% 57.45%, 69% 58.4%, 70% 59.35%, 71% 60.2%, 72% 61.05%, 73% 61.8%, 74% 62.45%, 75% 63.05%, 76% 63.6%, 77% 64.05%, 78% 64.4%, 79% 64.7%, 80% 64.85%, 81% 65%, 82% 65%, 83% 64.9%, 84% 64.75%, 85% 64.5%, 86% 64.2%, 87% 63.75%, 88% 63.25%, 89% 62.7%, 90% 62.05%, 91% 61.3%, 92% 60.5%, 93% 59.65%, 94% 58.75%, 95% 57.8%, 96% 56.8%, 97% 55.75%, 98% 54.65%, 99% 53.55%, 100% 52.4%, 100% 100%, 0% 100%);
+
+    
+}
+
+/* Header Text Container */
+.header-text-box {
+    display: flex;
+    width: 100%;
+    position: absolute;
+    top: 65vh;
+    font-size: 35px;
+    justify-content: center;
+    text-align: center;
+}
+
+/* Header Text Box */
+
+.header-text-box
+.header-text {
+    color: #023047;
+}
+
+/* Header Text Box Span */
+
+.header-text-box
+.header-text
+.highlight-1 {
+    color: white;
+}
+
+/* Header Subtext */
+
+.header-text-box
+.header-text
+.header-text-sub {
+    display: block;
+    line-height: 45px;
+    text-align: center;
+}
+
+/* Main content page underneath header */
+
+@-webkit-keyframes STAR-MOVE {
+    from {
+        background-position: 5% 5%
+    }
+
+    to {
+        background-position: 1300% 600%
+    }
+}
+
+.main-page-top
+#background {
+    background: url("img/background.png") repeat 5% 5%;
+    position: absolute;
+    top: 1.2vh;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -15;
+
+    -webkit-animation-name: STAR-MOVE;
+    -webkit-animation-duration: 500s;
+    -webkit-animation-timing-function: linear;
+    -webkit-animation-iteration-count: infinite;
+}
+
+.main-page-top
+#midground {
+    background: url("img/midground.png") repeat 20% 20%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -15;
+
+    -webkit-animation-name: STAR-MOVE;
+    -webkit-animation-duration: 250s;
+    -webkit-animation-timing-function: linear;
+    -webkit-animation-iteration-count: infinite;
+}
+
+.main-page-top #foreground {
+    background: url("img/foreground.png") repeat 35% 35%;
+    position: absolute;
+    top: 0vh;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -15;
+
+    -webkit-animation-name: STAR-MOVE;
+    -webkit-animation-duration: 100s;
+    -webkit-animation-timing-function: linear;
+    -webkit-animation-iteration-count: infinite;
+}
+
+.main-page-top {
+    display: block;
+    position: absolute;
+    top: 72.5em;
+    background-color: transparent;
+    width: 100%;
+}
+
+
+.main-page-top
+.main-page-content {
+    display: block;
+    font-size: 36px;
+    text-align: center;
+    position: relative;
+    top: -20vh;
+}
+
+.main-page-top
+.main-page-content
+.title-sub {
+    font-size: 16px;
+}
+
+.main-page-top
+.introduction {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+    font-size: 24px;
+    position: relative;
+    top: -20vh;
+}
+
+.main-page-top
+.introduction
+.introduction-body-left {
+}
+
+.main-page-top
+.introduction
+.introduction-body-right img{
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+    object-position: center;
+
+}
+
+
+
+
+
+
+@media screen and (max-width: 580px) {
+
+    .main-nav
+    .main-nav-list
+    img {
+        visibility: hidden;
+    }
+    
+}
+
+@media screen and (max-width: 350px) {
+    
+    .header-wrapper
+    .header {
+        font-size: 70%;
+    }
+}
